@@ -1,6 +1,8 @@
 name: Manual run
 
-on: repository_dispatch
+on:
+  repository_dispatch:
+    types: ["greetings"]
 
 jobs:
   manual-run:

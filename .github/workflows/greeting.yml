@@ -1,0 +1,12 @@
+name: Manual run
+
+on: repository_dispatch
+
+jobs:
+  manual-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Show message
+        run: echo Hello, all is OK
